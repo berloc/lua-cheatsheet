@@ -1,0 +1,179 @@
+--
+-- Created by IntelliJ IDEA.
+-- User: berloc
+-- Date: 2017.06.09.
+-- Time: 14:05
+-- To change this template use File | Settings | File Templates.
+--
+
+--name = "Dani"
+--age = 92
+--io.write('Szia Dani! Így kell printelni?! ', #name, '\n')
+--
+--print("Szia ".. name, 'Age: '..age)
+--
+--io.write("Type: "..type(name), "\n")
+--
+--longString = [[I'm a very long
+--very long string
+--so i need to write in this line too
+--and another line
+--and another.]]
+--
+--io.write(longString, "\n")
+--
+--io.write("Math.floor(2.354): ", math.floor(2.354), "\n")
+--io.write("Math.ceil(2.354): ", math.ceil(2.354), "\n")
+--io.write("math.max(4, 65): ", math.max(4, 65), "\n")
+--io.write("math.min(4, 65): ", math.min(4, 65), "\n")
+--io.write("math.pow(4, 2): ", math.pow(4, 2), "\n")
+--io.write("math.sqrt(4): ", math.sqrt(4), "\n")
+--
+--
+--io.write("math.random(10): ", math.random(10), "\n")
+--io.write("math.random(10,5458): ", math.random(10,5458), "\n")
+
+--function canDrink(age)
+--    -- canDrink = age > 18 ? true : false
+--    print("Can I drink?")
+--    print("You're age is: ", age)
+--    decision = age >= 18 and true or false
+--    if (decision == false)
+--    then print("No, you can't!")
+--    else print("Yes, you can!")
+--    end
+--end
+--canDrink(15)
+--print("\n")
+--
+--function growToDrink(age)
+--    while (age<18)
+--        do
+--            print("you're too young, you can't drink! You have to wait: "..18-age.."years")
+--            age = age + 1
+--        end
+--    print('now you can drink as much as you want!')
+--end
+--growToDrink(15)
+--
+--print("\n")
+--function stringChange(text)
+--    --print("length of the string: ", string.len(longText))
+--    print("Length of the string:", #text)
+--    print(string.gsub(text,"a", "$"))
+--    print(string.reverse(text))
+--end
+--longText = "alma alma a a a korte szilva barack car bar war"
+--stringChange(longText)
+--
+--print("\n")
+--
+--function countdown(max, counter)
+--    for i=max, 0, counter
+--        do
+--            print("Micsoda for ciklus, befosok...",i)
+--        end
+--end
+--countdown(15,-3)
+--
+--print("\n")
+--function guessGame()
+--
+--    secretNumber = math.random(0, 350)
+--
+--    repeat
+--        print("Enter your guess:")
+--        input = io.read()
+--        guess = tonumber(input)
+--        if (guess > secretNumber)
+--        then print("smaller")
+--        else print("bigger")
+--        end
+--    until guess == secretNumber
+--    print("nice guess, bye")
+--end
+--guessGame()
+--
+--function tableArray()
+--
+--    numbers = {1,72,83,34,756,18,27,53,3,5,7,9 }
+--    print(table.concat(numbers, ", "))
+--
+--    for k, v in pairs(numbers) do
+--        io.write(k..": ", v, ", ")
+--    end
+--end
+--tableArray()
+--
+--function dictionaryMaker()
+--
+--    aMultiTable = {}
+--
+--    for i = 0, 9 do
+--        aMultiTable[i] = {}
+--        for j = 0, 9 do
+--            aMultiTable[i][j] = tostring(i) .. tostring(j)
+--        end
+--        for k,v in pairs(aMultiTable) do
+--            print(k..": ",v)
+--        end
+--    end
+--end
+--dictionaryMaker()
+--
+--function getSomeMore(...)
+--    local sum = 0
+--
+--    for k,v in pairs{...} do
+--        sum = sum + v
+--    end
+--    return sum
+--end
+--print(getSomeMore(1,2,3,4,5,6,7,8,9))
+--
+--doubleIt = function(x) return x*2 end
+--print(doubleIt(3))
+--
+--
+--function outer()
+--    local i = 0
+--
+--    return function()
+--        i = i+1
+--        return i
+--    end
+--end
+--
+--getI = outer()
+--
+--print(getI())
+--print(getI())
+--print(getI())
+--print(getI())
+--
+--co = coroutine.create(function()
+--    for i=1, 10, 1 do
+--        print(i)
+--        print(coroutine.status(co))
+--        if i==5 then coroutine.yield() end
+--    end
+--end)
+--
+--co2 = coroutine.create(function()
+--    local num = 0
+--    while num < 24 do
+--        print(num)
+--        num = num + 4
+--    end
+--end)
+--
+--print(coroutine.status(co))
+--coroutine.resume(co)
+--print(coroutine.status(co))
+--print("status of "..tostring(co2), coroutine.status(co2))
+--coroutine.resume(co2)
+--print(coroutine.status(co2))
+--coroutine.resume(co)
+--print(coroutine.status(co))
+
+
